@@ -5,6 +5,9 @@ dist: focal
 if: (type = push && (branch = master || branch = develop)) || (type = pull_request
   && (branch = master))
 language: go
+arch:
+  - amd64
+  - ppc64le
 services:
 - docker
 before_script:
